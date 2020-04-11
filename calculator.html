@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Welcome to Logan's Basic Calculator!</h1>
+<h4>To use, click the button below.</h4>
+<button onclick="myFunction()">Math</button>
+<script>
+function myFunction() {
+var answer
+var num1 = prompt ("Number 1?")
+var func = prompt ("Function? (+, -, *, or /)")
+var num2 = prompt ("Number 2?")
+
+if (func === "+") {
+   answer = +num1 + +num2;
+   alert (answer)
+}
+if (func === "-") {
+   answer = num1 - num2;
+   alert (answer)
+}
+if (func === "*") {
+   answer = num1 * num2;
+   alert (answer)
+}
+if (func === "/") {
+   answer = num1 / num2;
+   alert (answer)
+}
+}
+</script>
+</body>
+</html>
